@@ -12,4 +12,5 @@ RUN yarn install
 
 EXPOSE 3000
 
-CMD [ "yarn", "dev", "-o"]
+ENTRYPOINT [ "yarn" ]
+CMD [ "dev", "-o" ]

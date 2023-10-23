@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "yarn install",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -11,8 +12,14 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "autoprefixer": "^10.4.16",
     "nuxt": "^3.8.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
     "vue": "^3.3.6",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1"
   }
 }

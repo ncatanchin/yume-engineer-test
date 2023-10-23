@@ -1,0 +1,12 @@
+.todo-highlight {
+    outline: 1px dashed red;
+    outline-offset: 3px;
+}
+
+body {
+    font-family: "BasicCommercial", sans-serif;
+}
+.btn-red, .bg-red {
+    background-color: #f44336;
+    color: #fff;
+}
