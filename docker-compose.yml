@@ -1,0 +1,37 @@
+services:
+
+  web:
+    build:
+      context: ./packages/front-end
+    ports:
+      - 3000:3000
+      - 24678:24678
+    volumes:
+      - ./packages/front-end:/www
+    networks:
+      - nuxt
+
+  api:
+    build:
+      context: ./packages/back-end
+    ports:
+      - 8080:8080
+    volumes:
+      - ./packages/back-end:/www
+    networks:
+      - laravel
+    depends_on:
+      - api-db
+  api-db:
+    image: mysql:latest
+    expose:
+      - 3306
+    networks:
+      - laravel
+    environment:
+      - MYSQL_DATABASE=laravel
+      - MYSQL_ROOT_PASSWORD=root
+
+networks:
+  laravel:
+  nuxt:
