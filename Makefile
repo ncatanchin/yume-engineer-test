@@ -7,6 +7,9 @@ setup:
 	# Install Composer dependencies
 	docker-compose run --rm --entrypoint composer api install
 
+	# Set up .env file if missing
+	docker-compose run --rm --entrypoint php api -r "file_exists('.env') || copy('.env.example', '.env');"
+	
 	# Generate application key
 	docker-compose run --rm api key:generate
 	
