@@ -53,3 +53,38 @@ After all containers are up:
 You will be able to log in when prompted with these details:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Username:** techtest@yumefood.com.au<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Password:** password
+
+
+### Task
+
+Create a basic CRUD (Create, Read, Update, Delete) application for managing products.
+
+### Requirements:
+
+#### Create an API to perform CRUD operations on products:
+- <s>GET /api/products: Retrieve all products.</s>
+- GET /api/products/{id}: Retrieve a specific product by its ID.
+- POST /api/products: Create a new product.
+- PUT /api/products/{id}: Update an existing product.
+- DELETE /api/products/{id}: Delete a product.
+
+#### Implement validation for the title field:
+- Title is required.
+- Title must be at least 3 characters long.
+
+#### Write tests to cover the API endpoints using Laravel's built-in testing framework.
+
+#### Create a PR with all your changes using conventional commits
+
+#### Bonus (if time permits)
+- Implement pagination for retrieving products
+- Update the product card to match the design [here](/packages/front-end/assets/img/product-card.png) - You can leave the other data in the design as static
+
+### Time Management:
+
+- Spend around 45 minutes on implementing the core CRUD functionality.
+- Allocate the remaining time for writing tests and bonus tasks (if applicable).
+
+This test aims to evaluate your understanding of Laravel basics, including routing, controllers, models, validation, testing and optionally pagination.
+Make sure to follow Laravel's conventions and best practices while implementing the solution.
+Good 
