@@ -26,12 +26,7 @@ The project is comprised of two main components:
 
 Here are the steps to get the project up and running using Docker.
 
-### Clone the Repository
-
-```bash
-git clone https://github.com/yumefood/yume-engineer-test.git
-cd yume-engineer-test
-```
+### Fork the Repository
 
 ### Build and Run the Containers
 
@@ -74,7 +69,7 @@ Create a basic CRUD (Create, Read, Update, Delete) application for managing prod
 
 #### Write tests to cover the API endpoints using Laravel's built-in testing framework.
 
-#### Create a PR with all your changes using conventional commits
+#### Push your changes using conventional commits
 
 #### Bonus (if time permits)
 - Implement pagination for retrieving products
