@@ -7,9 +7,6 @@ to work in an existing codebase.
 This is designed to be as similar to our development environment as possible and includes some code
 taken from the current codebases.
 
-There are no required changes prior to the interview; you simply need to set up and run the project.
-The interview will consist of some questions regarding the codebase and a short pair programming session.
-
 The project is comprised of two main components:
 
 1. A **Laravel 10** based API that also provides OAuth2 support.
